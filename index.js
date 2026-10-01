@@ -79,7 +79,9 @@ client.once(Events.ClientReady, async (c) => {
   await c.application.commands.set([roleCommand.toJSON()]);
   console.log(`Logged in as ${c.user.tag}, serving ${c.guilds.cache.size} server(s).`);
 
-  await c.user.setActivity("Use /role to change your color", { type: "PLAYING" });
+  c.user.setActivity("Use /role to change your color", {
+    type: ActivityType.Playing,
+  });
 });
 
 // New member: create a random-colored role named after them and welcome them.
