@@ -95,7 +95,7 @@ client.on(Events.GuildMemberAdd, async (member) => {
       .setColor(role.color)
       .setDescription(
         `Welcome to **${member.guild.name}** you are member **#${member.guild.memberCount}**. ` +
-          `You were given ${role} with a random color, but you can change it with /role`,
+          `You were given ${role} with a random color, but you can change it with \`/role\``,
       );
 
     await channel.send({
