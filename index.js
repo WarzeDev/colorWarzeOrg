@@ -4,7 +4,8 @@ import {
   Events,
   GatewayIntentBits,
   MessageFlags,
-  SlashCommandBuilder
+  SlashCommandBuilder,
+  ActivityType,
 } from "discord.js";
 import { parseColor, randomColor } from "./colors";
 import { deleteRoleRecord, getRoleId, saveRoleId } from "./db";
