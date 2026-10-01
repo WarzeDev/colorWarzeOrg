@@ -6,8 +6,8 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "start": "bun run src/index.ts",
-    "dev": "bun --watch src/index.ts"
+    "start": "bun run index.js",
+    "dev": "bun --watch index.js"
   },
   "dependencies": {
     "discord.js": "^14.16.0"
